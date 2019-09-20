@@ -1,7 +1,7 @@
 {
-    "name": "mattyrad/noun-project-php-client",
+    "name": "rolfisub/noun-project-php-client",
     "description": "A PHP client to interface with The Noun Project",
-    "homepage": "https://github.com/MattyRad/noun-project-php-client",
+    "homepage": "https://github.com/rolfisub/noun-project-php-client",
     "license": "MIT",
     "authors": [
         {

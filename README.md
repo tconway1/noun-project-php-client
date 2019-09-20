@@ -106,6 +106,20 @@ $usage = $result->getUsage();
 $limits = $result->getLimits();
 ```
 
+#### Publish
+
+###### Notifies the api about published icons Id's
+
+```php
+$result = $api->send(new NounProject\Request\Publish("1,2");
+
+$published = $result->getPublished();
+
+if($published["result"] === "success") {
+    echo "Yay!";
+}
+```
+
 #### User
 
 ###### TODO
