@@ -16,7 +16,7 @@ class Client
         $this->api_secret = $api_secret;
     }
 
-    public function request(string $type, string $uri)
+    public function request(string $type, string $uri, array $options = [])
     {
         $handler = $this->prepHttpHandler();
 
@@ -26,7 +26,7 @@ class Client
             'auth' => 'oauth',
         ]);
 
-        return $http->request($type, $uri);
+        return $http->request($type, $uri, $options);
     }
 
     private function prepHttpHandler()

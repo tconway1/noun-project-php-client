@@ -12,9 +12,9 @@ class IconsInCollection extends NounProject\Request
 
     public function __construct(
         $collection_id_or_slug,
-        int $offset = 0,
-        int $page = 0,
-        int $limit = 0
+        $offset = 0,
+        $page = 0,
+        $limit = 0
     ) {
         $this->collection_id_or_slug = $collection_id_or_slug;
         $this->offset = $offset;

@@ -13,10 +13,10 @@ class Icons extends NounProject\Request
 
     public function __construct(
         string $term,
-        bool $limit_to_public_domain = false,
-        int $offset = 0,
-        int $page = 0,
-        int $limit = 0
+        $limit_to_public_domain = false,
+        $offset = 0,
+        $page = 0,
+        $limit = 0
     ) {
         $this->term = $term;
         $this->limit_to_public_domain = $limit_to_public_domain;

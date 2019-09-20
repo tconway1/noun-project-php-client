@@ -5,7 +5,7 @@ use GuzzleHttp\ClientInterface as HttpClient;
 
 class Client
 {
-    const BASE_URL = 'http://api.thenounproject.com';
+    const BASE_URL = 'https://api.thenounproject.com';
 
     private $api_key;
     private $api_secret;
@@ -23,7 +23,12 @@ class Client
         $http = $this->http ?: new Http\Client($this->api_key, $this->api_secret);
 
         try {
-            $response = $http->request($n_request->getHttpType(), $n_request->getUri());
+            $body = $n_request->getBody();
+            if(!$body) {
+                $response = $http->request($n_request->getHttpType(), $n_request->getUri());
+            } else {
+                $response = $http->request($n_request->getHttpType(), $n_request->getUri(), ["json" => $body]);
+            }
         } catch (\Exception $e) {
             return new Request\Result\Failure\ApiRequestFailed($e->getMessage());
         }

@@ -52,10 +52,11 @@ class ClientTest extends \PHPUnit\Framework\TestCase
         $this->http->request($request->getHttpType(), $request->getUri())->shouldHaveBeenCalled();
     }
 
-    private function mockNounProjectRequest($http_type = 'GET', $uri = '/collection')
+    private function mockNounProjectRequest($http_type = 'GET', $uri = '/collection', $body = null)
     {
         $request = $this->prophesize(NounProject\Request::class);
 
+        $request->getBody()->willReturn($body);
         $request->getHttpType()->willReturn($http_type);
         $request->getUri()->willReturn($uri);
         $request->createResult(Argument::any())->willReturn($this->prophesize(Support\Result::class)->reveal());

@@ -10,9 +10,9 @@ class Collections extends NounProject\Request
     private $limit;
 
     public function __construct(
-        int $offset = 0,
-        int $page = 0,
-        int $limit = 0
+        $offset = 0,
+        $page = 0,
+        $limit = 0
     ) {
         $this->offset = $offset;
         $this->page = $page;
