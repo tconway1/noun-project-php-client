@@ -4,7 +4,7 @@
 
 ## Installation
 
-`composer require mattyrad/noun-project-php-client`
+`composer require rolfisub/noun-project-php-client`
 
 ## Usage
 
