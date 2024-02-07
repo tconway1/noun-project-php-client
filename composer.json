@@ -13,7 +13,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/tconway1/mattyrad-support.git"
+            "url": "https://github.com/tconway1/mattyrad-support"
         }
     ],
     "require": {
