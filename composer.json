@@ -19,7 +19,7 @@
     "require": {
         "php": ">=7.0",
         "guzzlehttp/guzzle": "^7.0",
-        "tconway1/mattyrad-support": "dev-master",
+        "mattyrad/support": "dev-forked-mattyrad-support",
         "guzzlehttp/oauth-subscriber": "^0.6.0"
     },
     "require-dev": {
