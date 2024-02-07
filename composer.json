@@ -10,10 +10,16 @@
             "homepage": "http://mradford.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/tconway1/mattyrad-support.git"
+        }
+    ],
     "require": {
         "php": ">=7.0",
         "guzzlehttp/guzzle": "^7.0",
-        "tconway1/mattyrad-support": "^1.0",
+        "tconway1/mattyrad-support": "dev-master",
         "guzzlehttp/oauth-subscriber": "^0.6.0"
     },
     "require-dev": {
